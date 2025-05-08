@@ -49,6 +49,9 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
+<script src=
+"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>    
 </head>
 
     
@@ -102,7 +105,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             </ul>
                         </div></li>
                      
-                   <li ><a href="https://pengdsci.github.io/datasets/" target="popup" onclick="window.open('https://pengdsci.github.io/datasets/','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Tutoring </font></a></li>
+                   <li ><a href="https://pengdsci.github.io/datasets/https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09w.open('https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Zoom </font></a></li>
                      
                      <li><a href=""><font color = "#0F3483">Interactive Apps</font><span class="a-inner"></span></a> 
                         <!-- Drop-down manual-->
@@ -212,11 +215,32 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
      <h5>Topics and Notes </h5>
      <ol style="line-height: 1.5em; margin-bottom: 15px">
    
-    <li> Chisquare goodness-of-fit</li>
+    
+    <li> chi-square goodness-of-fit of categorical distributions</li>
          <ul>
-          <li>a. Chisquare test of goodness-of-fit </li>
+          <li>a. Categorical Distribution</li>
+             <ul>
+                <li>&emsp; &#9632;  Cell probabilities (<i>p</i><sub>i</sub>) for corresponding i-th class label</li>
+                <li>&emsp; &#9632;  Sum to unity: &sum; <i>p</i><sub>i</sub> = 1</li>
+             </ul>
+          <li>b. Expected versus Observed Frequencies </li>
+             <ul>
+               <li>&emsp; &#9632;  <b>Expected cell frequencies</b>: sample size &times; cell probabilities - expected frequency table (E)</li>
+               <li>&emsp; &#9632;  <b>Observed cell frequencies</b>: The actual counts recorded in the data for each category - observed frequency table (O)</li>
+             </ul>
+             
+          <li>c. Chisquare Goodness-of-fit Test </li>
+             <ul>
+               <li>&emsp; &#9632;  The distance between two frequency tables</li>
+                 $$TS = \sum_{i=1}^k\frac{(O_i-E_i)^2}{E_i}$$
+               <li>&emsp; &#9632;  Chisquare distribution and chisquare table</li>
+             </ul>
         </ul>
-    <li> Study materials</li>
+         
+    <li>Chi-square test of independence (optional)</li>
+         
+         
+    <li><b>Lecture Note</b></li>
           <ul>
             <li>a. [Lecture Note] Goodness-of-fit test 
                  <a href="notes/w13-Chisq-Goodness-of-fit.html" target="popup" 
@@ -228,7 +252,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
          </ul>
         </ol>
         
-     <h5>Topics and Notes </h5>
+     <h5>Learning Resources </h5>
      <ol style="line-height: 1.5em; margin-bottom: 15px">
          <li> <font color = "red">[Optional] </font>Read section 12.1 of Navidi's textbook </li>
          <li> <font color = "red"><b>Interactive statistics learning apps</b></font>
@@ -298,8 +322,8 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             <li><center> <font color = "blue"> Week #5</font></center>    
 				            <li><a href="index13.html" class="nav-link">13. Correlation and Regression</a> </li>
                             <li><a href="index14.html" class="nav-link">14. Chisquare tests </a> </li>
-                            <li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li>
-                            <li><a href="exam05.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
+                            <!--li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li-->
+                            <li><a href="index15.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
                                 
                             <hr color = "skyblue">     
                       </ul>

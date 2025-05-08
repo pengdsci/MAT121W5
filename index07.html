@@ -49,6 +49,9 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
+    <script src=
+"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
     
@@ -102,7 +105,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             </ul>
                         </div></li>
                      
-                   <li ><a href="https://pengdsci.github.io/datasets/" target="popup" onclick="window.open('https://pengdsci.github.io/datasets/','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Tutoring </font></a></li>
+                   <li ><a href="https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09" target="popup" onclick="window.open('https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Zoom </font></a></li>
                      
                      <li><a href=""><font color = "#0F3483">Interactive Apps</font><span class="a-inner"></span></a> 
                         <!-- Drop-down manual-->
@@ -207,25 +210,35 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
     <tr>
     <td><img class="dt-top-logo" src="img/placeholder.jpg" width="80" height="80"/></td>
     <td>             
-    <h3 id = "week01">7. Confidence Intervals Based on t Distributions </h3>
+    <h3 id = "week01">7. Confidence Intervals for Proportion and Population Mean Based on Small Samples </h3>
     
         <h5>Topics and Notes </h5>
         <ol style="line-height: 1.5em; margin-bottom: 15px">
             
    <li> Confidence interval for proportions </li>    
      <ul>
-        <li>a. Sampling distribution of sample proportion</li>
-        <li>b. Confidence interval of proportion</li>
+        <li>a. Sampling distribution of sample proportion (p&#770;)</li>
+        <li>b. Margin of error: E = CV &#8730; <sup>p&#770;(1-p&#770;)</sup>&frasl;<sub>n</sub></li>
+        <li>c. Steps for contructing confidence interval of proportion</li>
+        <li>d. <b>Tip</b>: Draw the density curve for p&#770; and label given information on it then draw a density curve of standard normal density labelled with corresponding transformed information</li>
     </ul>
    <li> Confidence interval of normal population mean - t confidence intervals </li>
     <ul>
-      <li>a.  Sampling distribution of the test statistic: t-distribution</li>
-      <li>b.  CI for normal population mean with unknown population variance</li>
+      <li>a. Definition of t-distribution: degrees of freedom</li>
+      <li>b. Finding critical value from t-table with a given degrees of freedom</li>
+      <li>c. As the degrees of the t-distribution increases, the t-distribution approaches standard normal distribution.</li>
+      <li>d. Sampling distribution of TS = (x&#772;- &mu;)/(s/&#8730;n): t-distribution with (n-1) degrees of freedom based on the following assumptions</li>
+        <ul>
+        <li>&emsp; &#9632; Population is normally distributed</li>
+        <li>&emsp; &#9632; Population standard deviation is unknown (i.e., estimated from data)</li>
+        <li>&emsp; &#9632; If sample size is less than 30, the t-critical value must be used. </li>         
+        </ul>
+      <li>e. The same 5-step procedure applies to the t- CI for normal population mean with unknown population variance</li>
     </ul>
 
-   <li> Study Materials</li>
+   <li> <b>Lecture Note</b></li>  
            <ul>
-            <li>a. [Lecture Note] CI for normal population mean and population proportions  
+            <li>a. CI for normal population mean and population proportions  
                  <a href="notes/w07-CI4MeansProportions.html" target="popup" 
                           onclick="window.open('notes/w07-CI4MeansProportions.html','name','width=900,height=500')">
                          <link-btn>HTML</link-btn> </a> 
@@ -315,8 +328,8 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             <li><center> <font color = "blue"> Week #5</font></center>    
 				            <li><a href="index13.html" class="nav-link">13. Correlation and Regression</a> </li>
                             <li><a href="index14.html" class="nav-link">14. Chisquare tests </a> </li>
-                            <li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li>
-                            <li><a href="exam05.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
+                            <!--li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li-->
+                            <li><a href="index15.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
                                 
                             <hr color = "skyblue">     
                       </ul>

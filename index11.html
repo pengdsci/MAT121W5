@@ -49,6 +49,9 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
+    <script src=
+"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
     
@@ -102,7 +105,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             </ul>
                         </div></li>
                      
-                   <li ><a href="https://pengdsci.github.io/datasets/" target="popup" onclick="window.open('https://pengdsci.github.io/datasets/','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Tutoring </font></a></li>
+                   <li ><a href="https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09" target="popup" onclick="window.open('https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Zoom </font></a></li>
                      
                      <li><a href=""><font color = "#0F3483">Interactive Apps</font><span class="a-inner"></span></a> 
                         <!-- Drop-down manual-->
@@ -214,18 +217,40 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
             
       <li> Normal test of two independent population means</li>
           <ul>
-             <li>a. Sampling distribution of the difference of two sample means</li>
-             <li>b. 6-step procedure: both critical and p-value methods.</li>
+             <li>a. Assumptions</li>
+              <ul>
+                <li>&emsp; &#9632; Both sample sizes are large, <font color = "red"><b>OR</b></font></li>
+                <li>&emsp; &#9632; If one of the sample size is small, both populations are normal and both variances are given. </li>
+              </ul>
+             <li>b. Sampling distribution of the difference of two sample means</li>
+              <ul>
+                 <li>&emsp; &#9632; &mu;<sub>1</sub> - &mu;<sub>2</sub> is approximated by  x&#772;<sub>1</sub> - x&#772;<sub>2</sub></li>
+                 <li>&emsp; &#9632; Variance of (x&#772;<sub>1</sub> - x&#772;<sub>2</sub>) is: V<sub>x&#772;<sub>1</sub> - x&#772;<sub>2</sub></sub> = &sigma;<sub>1</sub><sup>2</sup>/n<sub>1</sub> <font color = "red"><b>+</b></font> &sigma;<sub>2</sub><sup>2</sup>/n<sub>2</sub> &asymp; s<sub>1</sub><sup>2</sup>/n<sub>1</sub> <font color = "red"><b>+</b></font> s<sub>2</sub><sup>2</sup>/n<sub>2</sub> </li>
+                 <li> &emsp; &#9632; Null hypothesis H<sub>0</sub>: &mu;<sub>1</sub> - &mu;<sub>2</sub> = d<sub>0</sub> </li>
+                 <li>&emsp; &#9632; test statistic TS = [(x&#772;<sub>1</sub> - x&#772;<sub>2</sub>) - d<sub>0</sub>]/&#8730; V<sub>x&#772;<sub>1</sub> - x&#772;<sub>2</sub></sub> &rarr; N(0, 1). </li>               
+              </ul>
+             <li>c. 6-step procedure: both critical and p-value methods.</li>
          </ul>
       <li> t-test of two independent population means</li>    
           <ul>
             <li>a. Assumptions: normal population, unknown but equal variances</li>
+              <ul>
+                <li> &emsp; &#9632; Both populations are normal </li>
+                <li> &emsp; &#9632; Population variances are unknown (i.e., need to be estimated from data) </li>
+                <li> &emsp; &#9632; Both populations are equal (<i>This assumption is only for this class</i>) </li>  
+              </ul>
+            <li>b. Test statistic</li>
+              <ul>
+                <li> &emsp; &#9632; Variance of pooled samples: V<sub>pool</sub> = [(n<sub>1</sub>-1)s<sub>1</sub><sup>2</sup> -(n<sub>2</sub>-1)s<sub>2</sub><sup>2</sup>]/ (n<sub>1</sub> +n<sub>2</sub>-2)</li>
+                <li> &emsp; &#9632; Null hypothesis H<sub>0</sub>: &mu;<sub>1</sub> - &mu;<sub>2</sub> = d<sub>0</sub> </li>
+                  <li> &emsp; &#9632; Test statistic: TS = [(x&#772;<sub>1</sub> - x&#772;<sub>2</sub>)- d<sub>0</sub>]/(&#8730; V<sub>pool</sub>) &rarr; t<sub>n<sub>1</sub> +n<sub>2</sub>-2</sub></li> 
+              </ul>
             <li>b. pooled sample variance and the 6-step procedure.</li>
          </ul>
     
-    <li> Study materials</li>
+    <li> <b>Lecture Note</b></li>
           <ul>
-            <li> [Lecture Note] Two-sample tests of the population mean  
+            <li> Two-sample tests of the population mean  
                  <a href="notes/w11-2sampleTests4Means.html" target="popup" 
                           onclick="window.open('notes/w11-2sampleTests4Means.html','name','width=900,height=500')">
                          <link-btn>HTML</link-btn> </a>  
@@ -310,8 +335,8 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             <li><center> <font color = "blue"> Week #5</font></center>    
 				            <li><a href="index13.html" class="nav-link">13. Correlation and Regression</a> </li>
                             <li><a href="index14.html" class="nav-link">14. Chisquare tests </a> </li>
-                            <li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li>
-                            <li><a href="exam05.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
+                            <!--li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li-->
+                            <li><a href="index15.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
                                 
                             <hr color = "skyblue">     
                       </ul>

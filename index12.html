@@ -49,6 +49,9 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
+    <script src=
+"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
     
@@ -102,7 +105,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             </ul>
                         </div></li>
                      
-                   <li ><a href="https://pengdsci.github.io/datasets/" target="popup" onclick="window.open('https://pengdsci.github.io/datasets/','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Tutoring </font></a></li>
+                   <li ><a href="https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09" target="popup" onclick="window.open('https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Zoom </font></a></li>
                      
                      <li><a href=""><font color = "#0F3483">Interactive Apps</font><span class="a-inner"></span></a> 
                         <!-- Drop-down manual-->
@@ -207,31 +210,64 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
     <tr>
     <td><img class="dt-top-logo" src="img/placeholder.jpg" width="80" height="80"/></td>
     <td>             
-    <h3 id = "week12">12. Two-sample Confidence Intervals and Exam #3 Review </h3>
+    <h3 id = "week12">12. Two-sample Confidence Intervals</h3>
     
      <h5>Topics and Notes </h5>
      <ol style="line-height: 1.5em; margin-bottom: 15px">
    
-   <li> Two-sample confidence intervals</li>
-   
-   <li> Review of exam #3</li>
+   <li> Confidence interval of the differenceof two independent population means </li>
+         <ul>
+           <li>a. Normal confidence intervals</li>
+              <ul>
+                <li>&emsp; &#9632;  Both sample sizes are large (bigger than 30 by convention)</li>
+                <li>&emsp; &#9632;  Normal populations with known variances. In this case, no restrition on sample sizes</li>
+              </ul>
+           <li>b. small sample t-confidence interval</li>
+             <ul>
+             <li>&emsp; &#9632;  Both populations must be normal</li>
+             <li>&emsp; &#9632;  Both population variance are unknown but equal</li>
+             <li>&emsp; &#9632;  Require to estimate pool variance by combining two random samples.</li>
+                 $$s^2_{pool}=\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2 - 2}$$
+             </ul>
+         </ul>
+   <li> Confidence interval of the differenceof two independent population proprtions</li>  
+        <ul>
+         <li>a. Assumptions</li>
+            <ul>
+              <li>&emsp; &#9632;  n<sub>1</sub>p&#770;<sub>1</sub> &#8805; 5 and &emsp; &#9632;  n<sub>1</sub>(1-p&#770;<sub>1</sub>) &#8805; 5, <font color = "red"><b>AND</b></font></li>
+            
+            <li>&emsp; &#9632;  n<sub>2</sub>p&#770;<sub>2</sub> &#8805; 5 and &emsp; &#9632;  n<sub>2</sub>(1-p&#770;<sub>2</sub>) &#8805; 5.</li>
+            </ul>
+          <li>b. Sampling distribution of (p&#770;<sub>1</sub> - p&#770;<sub>1</sub>) is normal.</li>
+          <li>c. The margin of error</li>
+            $$E=Z_{\alpha/2}\sqrt{\frac{\hat{p}_1(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2(1-\hat{p}_2)}{n_2}}$$
+         </ul> 
+         
+         
+
+   <!--li> Review of exam #3</li>
          <ul> 
              <li>a. The general framework of testing hypothesis.</li> 
              <li>b. One-sample tests for population mean and proportion: Normal and t-tests.</li>
              <li>c. Paired-sample t-test.</li>
-             <li>Two-sample tests for the difference of population means normal and t-tests. (tests of two proportions will not be covered in this course).</li>
-
-            <li>d. Study materials</li>
+             <li>d. Two-sample tests for the difference of population means. (tests of two proportions will not be covered in the exam).</li>
+             <ul>
+                <li>&emsp; &#9632;  Normal test: large samples <font color = "red"><b>OR</b></font> small samples with normal populations with knownpopulation variances</li>
+                <li>&emsp; &#9632; t-test: normal population with <b>unknown</b> but <font color = "red"><b>equal</b></font> population variances. a pooled sample variance is needed in the test statistic</li>
+             </ul>
+         </ul-->
+    
+    <li><b>Lecture Note</b></li>
                  <ul>
-                    <li> [Lecture Note] Review of hyperthesis testing   
-                        <a href="notes/w11-HTReview.html" target="popup" 
-                          onclick="window.open('notes/w11-HTReview.html','name','width=900,height=500')">
+                    <li> Two-sample confidence intervals   
+                        <a href="notes/w12-Two-Sample-CI.html" target="popup" 
+                          onclick="window.open('notes/w12-Two-Sample-CI.html','name','width=900,height=500')">
                          <link-btn>HTML</link-btn></a> 
-                         <a href="notes/w11-HTReview.pdf" target="popup" 
-                          onclick="window.open('notes/w11-HTReview.pdf','name','width=900,height=500')">
+                         <a href="notes/w12-Two-Sample-CI.pdf" target="popup" 
+                          onclick="window.open('notes/w12-Two-Sample-CI.pdf','name','width=900,height=500')">
                          <link-btn>PDF</link-btn> </a></li>
                   </ul>
-        </ul>
+        
       </ol>
    
         
@@ -292,8 +328,8 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             <li><center> <font color = "blue"> Week #5</font></center>    
 				            <li><a href="index13.html" class="nav-link">13. Correlation and Regression</a> </li>
                             <li><a href="index14.html" class="nav-link">14. Chisquare tests </a> </li>
-                            <li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li>
-                            <li><a href="exam05.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
+                            <!--li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li-->
+                            <li><a href="index15.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
                                 
                             <hr color = "skyblue">     
                       </ul>

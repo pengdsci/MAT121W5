@@ -49,6 +49,9 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
+    <script src=
+"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
     
@@ -102,7 +105,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             </ul>
                         </div></li>
                      
-                   <li ><a href="https://pengdsci.github.io/datasets/" target="popup" onclick="window.open('https://pengdsci.github.io/datasets/','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Tutoring </font></a></li>
+                   <li ><a href="https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09" target="popup" onclick="window.open('https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Zoom </font></a></li>
                      
                      <li><a href=""><font color = "#0F3483">Interactive Apps</font><span class="a-inner"></span></a> 
                         <!-- Drop-down manual-->
@@ -215,16 +218,29 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
       <li> t-test for normal population means
         <ul>
 			<li>a. t-distribution revisited.</li>
-            <li>b. Conditions and steps for the t-test.</li>
+            <li>b. Assumptions of the t-test.</li>
+            <ul>
+              <li>
+                 <li>&emsp; &#9632; Population must be normal and variance is unknown</li>
+                 <li>&emsp; &#9632; If sample size is small, a test must be used</li>
+                 <li>&emsp; &#9632; If sample size is large, the t-test can be approximated by normal test. </li>                
+            </ul>
+            <li>c.  Steps for t-test</li>
+            <ul>
+             <li>&emsp; &#9632; The same 6-step procedure of normal tests applies to t-test</li>
+             <li>&emsp; &#9632; Only critical value method is required in this class</li>
+            </ul>
         </ul>
      <li> Paired t-test
          <ul>
-             <li>a. Paired samples and sample of difference</li>
-             <li>b. t-test for the difference of dependent population means</li>
+             <li>a. Understanding paired samples: taking measurement from the same subject twice (e.g, measurement before and after a person received a treatment)</li>
+             <li>b. Take different of the paired measures (either before measurement - after measurement or vice versa) to convert to a single sample</li>
+             <li>c. Assumptions on the differences of the corresponding the paired measurement (in this class): normally distributed with unknown variance.</li>
+             <li>d. t-test for the difference of dependent population means based on the paired sample</li>
          </ul>
-     <li> Study Materials</li>    
+     <li> <b>Lecture Note</b></li>    
        <ul>
-            <li> [Lecture Note] t-tests and paired t-tests  
+            <li> t-tests and paired t-tests  
                  <a href="notes/w10-t-paired-ttest.html" target="popup" 
                           onclick="window.open('notes/w10-t-paired-ttest.html','name','width=900,height=500')">
                          <link-btn>HTML</link-btn> </a> 
@@ -309,8 +325,8 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             <li><center> <font color = "blue"> Week #5</font></center>    
 				            <li><a href="index13.html" class="nav-link">13. Correlation and Regression</a> </li>
                             <li><a href="index14.html" class="nav-link">14. Chisquare tests </a> </li>
-                            <li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li>
-                            <li><a href="exam05.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
+                            <!--li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li-->
+                            <li><a href="index15.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
                                 
                             <hr color = "skyblue">     
                       </ul>

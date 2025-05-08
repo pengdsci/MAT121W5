@@ -49,6 +49,9 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
+<script src=
+"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
     
@@ -102,7 +105,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             </ul>
                         </div></li>
                      
-                   <li ><a href="https://pengdsci.github.io/datasets/" target="popup" onclick="window.open('https://pengdsci.github.io/datasets/','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Tutoring </font></a></li>
+                   <li ><a href="https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09" target="popup" onclick="window.open('https://wcupa.zoom.us/j/6840171840?pwd=ZC90eHk4OUJ5QUlnUzdCUEd2cW5VZz09','name','width=900,height=500')" class="nav-link"><font color = "#0F3483">Zoom </font></a></li>
                      
                      <li><a href=""><font color = "#0F3483">Interactive Apps</font><span class="a-inner"></span></a> 
                         <!-- Drop-down manual-->
@@ -214,17 +217,37 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
    
     <li> Correlation coefficients</li>
       <ul>
-        <li>a. Linear correlaion coefficeint and interpreation</li>
+        <li>a. Linear correlaion coefficeint</li>
+          <ul>
+            <li>&emsp; &#9632;  Three sum of squares: $$S^2_{xy}=\sum_{i=1}^n(x_i-\bar{x})(y-\bar{y}), S^2_{xx} =\sum_{i=1}^n(x_i-\bar{x})^2, S^2_{yy}=\sum_{i=1}^n(y_i-\bar{y})^2$$ </li>
+            <li>&emsp; &#9632;  Pearson correlation coefficient: r = S<sub>xy</sub><sup>2</sup>/(&#8730;S<sub>xx</sub><sup>2</sup> &#8730;S<sub>yy</sub><sup>2</sup>)</li>
+          </ul>
+        <li>b. Interpreation: strength and direction of linear correlation</li>  
      </ul>
     <li> Least square regression </li>
       <ul>
-        <li>a. Regression coefficients and interpretation</li>
-        <li>b. Coefficient of determionation</li>
-        <li>c. Inference of regression: testing slope and prediction interval</li>
-      </ul> 
-     <li> Study materials</li>
+        <li>a. Least sqaure regression y = b + mx</li>
+        <li>b. Interpretation of m: The amount by which y changes when x increases by one unit.</li>
+        <li>c. Estimation: m = S<sub>xy</sub><sup>2</sup>/S<sub>xx</sub><sup>2</sup>, b =  y&#772; -m x&#772;.</li>
+        <li>d. Coefficient of determionation</li>
+            <ul>
+            <li>&emsp; &#9632;  Formula:  R<sup>2</sup> = r<sup>2</sup>, r is the pearson correlation coefficient.</li>
+            <li>&emsp; &#9632;  Interpretation: Percentage of variation in y captured by the linear regression </li>
+            <li>&emsp; &#9632;  R<sup>2</sup> measures goodness of the regression.</li>
+            </ul>
+         </ul>
+        <li>Application and Inference on Linear Regression</li>
+         <ul>
+           <li>Prediction with linear regression</li>  
+           <li>Inference of slope parameter m</li>
+             <ul>
+              <li>&emsp; &#9632;  Testing H<sub>0</sub>: m = 0. p-value method. </li>
+              <li>&emsp; &#9632;  Confidence interval of m. If 0 is not in the interval, m is not equal to 0.</li>
+             </ul>
+         </ul> 
+     <li><b>Lecture Note</b></li>
           <ul>
-            <li>  [Lecture Note] Correlation and linear regression
+            <li> Correlation and linear regression
                  <a href="notes/w12-CorrelationRegression.html" target="popup" 
                           onclick="window.open('notes/w12-CorrelationRegression.html','name','width=900,height=500')">
                          <link-btn>HTML</link-btn></a> 
@@ -315,8 +338,8 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
                             <li><center> <font color = "blue"> Week #5</font></center>    
 				            <li><a href="index13.html" class="nav-link">13. Correlation and Regression</a> </li>
                             <li><a href="index14.html" class="nav-link">14. Chisquare tests </a> </li>
-                            <li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li>
-                            <li><a href="exam05.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
+                            <!--li><a href="index15.html" class="nav-link">15. Review of Final Exam </a> </li-->
+                            <li><a href="index15.html" class="nav-link"><font color = "red"> Final Exam </font> <font color= "blue">[Instructions]</font></a>     
                                 
                             <hr color = "skyblue">     
                       </ul>
