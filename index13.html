@@ -49,10 +49,15 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
-<script src=
-"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>   
+         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
     
@@ -221,7 +226,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
         <li>a. Linear correlaion coefficeint</li>
           <ul>
             <li>&emsp; &#9632;  Three sum of squares: $$S^2_{xy}=\sum_{i=1}^n(x_i-\bar{x})(y-\bar{y}), S^2_{xx} =\sum_{i=1}^n(x_i-\bar{x})^2, S^2_{yy}=\sum_{i=1}^n(y_i-\bar{y})^2$$ </li>
-            <li>&emsp; &#9632;  Pearson correlation coefficient: r = S<sub>xy</sub><sup>2</sup>/(&#8730;S<sub>xx</sub><sup>2</sup> &#8730;S<sub>yy</sub><sup>2</sup>)</li>
+            <li>&emsp; &#9632;  Pearson correlation coefficient: $r= \frac{S^2_{xy}}{\sqrt{S^2_{xx}}\sqrt{S^2_{yy}}}$</li>
           </ul>
         <li>b. Interpreation: strength and direction of linear correlation</li>  
      </ul>
@@ -229,7 +234,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
       <ul>
         <li>a. Least sqaure regression y = b + mx</li>
         <li>b. Interpretation of m: The amount by which y changes when x increases by one unit.</li>
-        <li>c. Estimation: m = S<sub>xy</sub><sup>2</sup>/S<sub>xx</sub><sup>2</sup>, b =  y&#772; -m x&#772;.</li>
+        <li>c. Estimation: m = $S^2_{xy}/S^2_{xx}$, b =  y&#772; -m x&#772;.</li>
         <li>d. Coefficient of determionation</li>
             <ul>
             <li>&emsp; &#9632;  Formula:  R<sup>2</sup> = r<sup>2</sup>, r is the pearson correlation coefficient.</li>

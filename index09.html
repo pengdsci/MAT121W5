@@ -49,9 +49,15 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
-    <script src=
-"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>   
+         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
     
@@ -228,7 +234,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
      <li> Hypothesis testing for proportion </li>
          <ul>
           <li>a. Assumpations: np &ge; 5 and n(1-p) &ge; 5.</li>
-          <li>b. TS = (p - p&#770; )/[&#8730; <sup>p&#770;(1-p&#770;)</sup>&frasl;<sub>&#8730;n</sub>] is approximately normally distribute: TS &rarr; N(0, 1)</li>
+          <li>b. $TS = (\hat{p} - p_0 )/\sqrt{p_0(1-p_0)/n}$ is approximately normally distribute: TS &rarr; N(0, 1)</li>
           <li>c. Both critical and p-value methods are good testing hypothesis on proportion.</li>
          </ul>
 

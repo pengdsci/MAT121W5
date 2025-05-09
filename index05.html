@@ -49,9 +49,15 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
-    <script src=
-"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>   
+         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
     
@@ -221,14 +227,14 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
             </ul>
           <li> Using CLT sampling distribution of sample means: Large sample <br>
                <ul>
-                 <li>a. Z-score transformation:  Z= (x - x&#772;)/(s/&#8730; n)</li>
+                 <li>a. Z-score transformation:  $Z = (x -\bar{x})/(s/\sqrt{n})$</li>
                  <li>b. Finding probability</li> 
                  <li>c. Finding percentiles </li>
                  <li>d. <b>Tip</b>: draw a density curve of the sampling distribution (x&#772;) and a density curve of standard normal density curve (Z)</li>
                 </ul>
           <li> CLT for Population Proportion
                <ul>
-                   <li>a. Z-score transformation:  Z= (p - p&#770;)/(&#8730; [p(1-p)/n]</li>
+                   <li>a. Z-score transformation:  $Z = (p - \hat{p})/\sqrt{p(1-p)/n}$</li>
                    <li>b. Finding probabilities</li>
                    <li>c. Finding percentiles</li>
                    <li>d. <b>Tip</b>: draw a density curve of the sampling distribution (p&#770;) and a density curve of standard normal density curve (Z)</li>

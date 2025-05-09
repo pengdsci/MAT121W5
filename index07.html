@@ -49,9 +49,15 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
-    <script src=
-"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>   
+         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
     
@@ -217,17 +223,17 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
             
    <li> Confidence interval for proportions </li>    
      <ul>
-        <li>a. Sampling distribution of sample proportion (p&#770;)</li>
-        <li>b. Margin of error: E = CV &#8730; <sup>p&#770;(1-p&#770;)</sup>&frasl;<sub>n</sub></li>
+        <li>a. Sampling distribution of sample proportion ($\hat{p}$)</li>
+        <li>b. Margin of error: $E = CV\times \sqrt{\hat{p}(1-\hat{p})/n}$</li>
         <li>c. Steps for contructing confidence interval of proportion</li>
-        <li>d. <b>Tip</b>: Draw the density curve for p&#770; and label given information on it then draw a density curve of standard normal density labelled with corresponding transformed information</li>
+        <li>d. <b>Tip</b>: Draw the density curve for $\hat{p}$ and label given information on it then draw a density curve of standard normal density labelled with corresponding transformed information</li>
     </ul>
    <li> Confidence interval of normal population mean - t confidence intervals </li>
     <ul>
       <li>a. Definition of t-distribution: degrees of freedom</li>
       <li>b. Finding critical value from t-table with a given degrees of freedom</li>
       <li>c. As the degrees of the t-distribution increases, the t-distribution approaches standard normal distribution.</li>
-      <li>d. Sampling distribution of TS = (x&#772;- &mu;)/(s/&#8730;n): t-distribution with (n-1) degrees of freedom based on the following assumptions</li>
+      <li>d. Sampling distribution of TS = $(\bar{x}- \mu)/(s/\sqrt{n})$: t-distribution with (n-1) degrees of freedom based on the following assumptions</li>
         <ul>
         <li>&emsp; &#9632; Population is normally distributed</li>
         <li>&emsp; &#9632; Population standard deviation is unknown (i.e., estimated from data)</li>

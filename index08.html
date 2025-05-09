@@ -49,9 +49,15 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
-    <script src=
-"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>   
+         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
     
@@ -220,7 +226,7 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
           <li>a. logic - <b>Hypothesize first (state H₀), then check whether the data contradicts it.</b></li>
           <li>b. Null hypothesis (H<sub>0</sub>) vs alternative hypothesis (H<sub>a</sub>)</li>
           <li>c. significance level: &alpha; (the same &alpha; in the confidencelevel 1 - &alpha;)</li>
-          <li>d. Test statistics (for mean): TS = (x&#772;- &mu;<sub>0</sub>)/(s/&#8730;n) and its distribution</li>
+          <li>d. Test statistics (for mean): $TS = (\bar{x}- \mu_0)/(s/\sqrt{n})$ and its distribution</li>
          </ul>
      <li> Types and methods of hypotheses</li>
          <ul>

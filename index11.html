@@ -49,9 +49,15 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
 <script type='text/javascript' src='js/scripts.js' id='dt_scripts-js'></script>
 <script type='text/javascript' src='js/cp01.js'></script> 
 <script type='text/javascript' src='js/cp02.js'></script>
-    <script src=
-"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>   
+         <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </head>
 
     
@@ -224,10 +230,14 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
               </ul>
              <li>b. Sampling distribution of the difference of two sample means</li>
               <ul>
-                 <li>&emsp; &#9632; &mu;<sub>1</sub> - &mu;<sub>2</sub> is approximated by  x&#772;<sub>1</sub> - x&#772;<sub>2</sub></li>
-                 <li>&emsp; &#9632; Variance of (x&#772;<sub>1</sub> - x&#772;<sub>2</sub>) is: V<sub>x&#772;<sub>1</sub> - x&#772;<sub>2</sub></sub> = &sigma;<sub>1</sub><sup>2</sup>/n<sub>1</sub> <font color = "red"><b>+</b></font> &sigma;<sub>2</sub><sup>2</sup>/n<sub>2</sub> &asymp; s<sub>1</sub><sup>2</sup>/n<sub>1</sub> <font color = "red"><b>+</b></font> s<sub>2</sub><sup>2</sup>/n<sub>2</sub> </li>
+                 <li>&emsp; &#9632; $\mu_1-\mu_2$ is approximated by  $\bar{x}_1 - \bar{x}_2$</li>
+                  
+                 <li>&emsp; &#9632; Variance of ($\bar{x}_1 - \bar{x}_2$) is $s^2_{\bar{x}_1-\bar{x}_2} = \sqrt{s_1^2/n_1 + s_2^2/n_2}$</li> 
+                     
+                                   
                  <li> &emsp; &#9632; Null hypothesis H<sub>0</sub>: &mu;<sub>1</sub> - &mu;<sub>2</sub> = d<sub>0</sub> </li>
-                 <li>&emsp; &#9632; test statistic TS = [(x&#772;<sub>1</sub> - x&#772;<sub>2</sub>) - d<sub>0</sub>]/&#8730; V<sub>x&#772;<sub>1</sub> - x&#772;<sub>2</sub></sub> &rarr; N(0, 1). </li>               
+                 <li>&emsp; &#9632; Test statistic is $TS = \frac{(\bar{x}_1-\bar{x}_2)-d_0}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}$</li> 
+                                 
               </ul>
              <li>c. 6-step procedure: both critical and p-value methods.</li>
          </ul>
@@ -241,9 +251,11 @@ var sgr_main = {"sgr_site_key":"6LcmTAcaAAAAAEELVElChVbNtpYH8TxjxPvYq9gv"};
               </ul>
             <li>b. Test statistic</li>
               <ul>
-                <li> &emsp; &#9632; Variance of pooled samples: V<sub>pool</sub> = [(n<sub>1</sub>-1)s<sub>1</sub><sup>2</sup> -(n<sub>2</sub>-1)s<sub>2</sub><sup>2</sup>]/ (n<sub>1</sub> +n<sub>2</sub>-2)</li>
+                <li> &emsp; &#9632; Variance of pooled samples
+                  $s^2_{\text{pool}} = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}$</li>
                 <li> &emsp; &#9632; Null hypothesis H<sub>0</sub>: &mu;<sub>1</sub> - &mu;<sub>2</sub> = d<sub>0</sub> </li>
-                  <li> &emsp; &#9632; Test statistic: TS = [(x&#772;<sub>1</sub> - x&#772;<sub>2</sub>)- d<sub>0</sub>]/(&#8730; V<sub>pool</sub>) &rarr; t<sub>n<sub>1</sub> +n<sub>2</sub>-2</sub></li> 
+                  <li> &emsp; &#9632; Test statistic
+                  $TS = \frac{(\bar{x}_1-\bar{x}_2)-d_0}{s_{\text{pool}}/\sqrt{1/n_1 + 1/n_2}} \rightarrow N(0,1)$  </li> 
               </ul>
             <li>b. pooled sample variance and the 6-step procedure.</li>
          </ul>
